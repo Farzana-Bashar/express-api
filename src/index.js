@@ -2,8 +2,10 @@ const express= require('express');
 
 const app= express();
 
+app.use(express.json());
+
 app.get("/api/v1", (req,res)=>{
-    res.send('Hello there!!');
+    res.send({user: 'zerin'});
 })
 
 const PORT= 3000;
