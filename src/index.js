@@ -4,6 +4,7 @@ const app= express();
 
 app.use(express.json());
 
+
 var data={};
 
 app.post("/api/user", (req,res)=>{
